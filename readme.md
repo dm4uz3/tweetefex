@@ -1,5 +1,8 @@
 # TwitFix
 
+# hi :3 
+
+
 Basic flask server that serves fixed twitter video embeds to desktop discord by using either the Twitter API or Youtube-DL to grab tweet video information. This also automatically embeds the first link in the text of non video tweets (API Only)
 
 ## How to use (discord side)
@@ -14,9 +17,9 @@ https://fxtwitter.com/[twitter video url] or [last half of twitter url] (everyth
 
 You can also simply type out 'fx' directly before 'twitter.com' in any valid twitter video url, and that will convert it into a working TwitFix url, for example:
 
-![example](example.gif)
+![example](example.png)
 
-**Note**: If you enjoy this service, please considering donating via [Ko-Fi](https://ko-fi.com/robin_universe) to help cover server costs
+**Note**: If you enjoy this service, please considering donating via [MY LIBERAPAY](https://liberapay.com/dm4uz3) to help cover server costs
 
 ## Child Projects:
 
@@ -24,37 +27,17 @@ You can also simply type out 'fx' directly before 'twitter.com' in any valid twi
 
 [TwitFix-Extension](https://github.com/robinuniverse/TwitFix-Extension) - A browser extention that lets you right click twitter videos to copy a twitfix link to your clipboard
 
-# Monthly Contributors
-
-TwitFix is run for free, period, I have no plans to monetize it directly in any way ( no ads, no premium accounts with more features ) so I rely on donations to keep TwitFix running, and I have created the option to [donate on a monthly basis using my KoFi](https://ko-fi.com/robin_universe#tier16328580186740)
-
-
-
-Here's a a list of the people who help to keep this project alive! ( current total monthly - $49!!! )
-
-1. [$3] First Contributor and Twitter Funnyman **Chris Burwell** ( [@countchrisdo](https://twitter.com/countchrisdo) on Twitter )
-
-2. [$9] Previously highest Contributor, Suspciously wealthy furry, and a very loving friend **Vectrobe** ( [@Vectrobe](https://twitter.com/Vectrobe) on Twitter )
-
-3. [$10] New highest monthly contributor, **helloitscrash**!
-
-4. [$6] A Mysterious and **Anonymous** contributor...
-
-5. [$10] One of the highest contributors, **Ryan Vilbrandt**!
-
-6. [$3] **Starcat13**, the one with the coolest sounding name
-
-7. [$5] THE LIGHT THROUGH WHICH GOD SPEAKS TO THIS EARTH: **Statek**
-
-8. [$3] **Impulse**, probably the source cheat
-
-9. [$3] a STRONG contendor for coolest name, "**Lost in Art & Magic**"       
-
 ## How to run (server side)
 
-this script uses the youtube-dl python module, along with flask, twitter and pymongo, so install those with pip (you can use `pip install -r requirements.txt`) and start the server with `python twitfix.py`
+idk what this guy was doing. listen to me. get python3 and install mongodb (community edition)
 
-I have included some files to give you a head start on setting this server up with uWSGI, though if you decide to use uWSGI I suggest you set up mongoDB link caching 
+do 
+
+`pip install -r requirements.txt`) and start the server  `python twitfix.py`
+
+then it generates a config for you and change it to db and api. get api keys and change mongodb to localhost then just run mongodb yeah. anything you need shoot me a dm 
+
+anyways 
 
 ### Config
 
