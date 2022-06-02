@@ -12,10 +12,10 @@ just put the url to the server, and directly after, the full URL to the tweet yo
 **I now have a copy of this running on a Linode server, you can use it via the following url**
 
 ```
-https://fxtwitter.com/[twitter video url] or [last half of twitter url] (everything past twitter.com/)
+https://sxtwitter.com/[twitter video url] or [last half of twitter url] (everything past twitter.com/)
 ```
 
-You can also simply type out 'fx' directly before 'twitter.com' in any valid twitter video url, and that will convert it into a working TwitFix url, for example:
+You can also simply type out 'sx' directly before 'twitter.com' in any valid twitter video url, and that will convert it into a working TwitFix url, for example:
 
 ![example](example.png)
 
@@ -73,13 +73,13 @@ This project is licensed under the **Do What The Fuck You Want Public License**
 
 ## Other stuff
 
-Going to `https://fxtwitter.com/latest/` will present a page that shows the all the latest tweets that were added to the database, use with caution as results may be nsfw! Current page created by @DorukSaga
+Going to `https://sxtwitter.com/latest/` will present a page that shows the all the latest tweets that were added to the database, use with caution as results may be nsfw! Current page created by @DorukSaga
 
 Using the `/dir/<video-url>` endpoint will return a redirect to the direct MP4 link, this can be useful for downloading a video
 
 Using the `/dl/<video-url>` or appending a `.mp4` will make the server download the video and return a static, locally hosted copy
 
-Using the subdomain `d.fxtwitter.com/<video-url>` will redirect to a direct MP4 url hosted on Twitter
+Using the subdomain `d.sxtwitter.com/<video-url>` will redirect to a direct MP4 url hosted on Twitter
 
 Using the `/info/<video-url>` endpoint will return a json that contains all video info that youtube-dl can grab about any given video
 
@@ -91,6 +91,6 @@ Using `/api/top/` will return a json with the most hit tweet in the database. Ta
 
 Using `/api/stats/` will return a json with some stats about TwitFix's activity (embeds, new cached links, API hits, downloads). Takes param `?=date"YYYY-MM-DD"` to return a specific day, otherwise will return today's stats to far
 
-Advanced embeds are provided via a `/oembed.json?` endpoint - This is manually pointing at my server in `/templates/index.html` and should be changed from `https://fxtwitter.com/` to whatever your domain is
+Advanced embeds are provided via a `/oembed.json?` endpoint - This is manually pointing at my server in `/templates/index.html` and should be changed from `https://sxtwitter.com/` to whatever your domain is
 
 We check for t.co links in non video tweets, and if one is found, we direct the discord useragent to embed that link directly, this means that twitter links containing youtube / vimeo links will automatically embed those as if you had just directly linked to that content
